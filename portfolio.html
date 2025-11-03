@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresher Software Engineer Portfolio | BCA Student</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.7;
+    }
+    .hero-bg {
+      background: linear-gradient(135deg, #9c27b0 0%, #4caf50 100%);
+    }
+    .section-bg {
+      background: #f4f7f6;
+    }
+    .card {
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+    .skill-icon {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1.2s ease-out forwards;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    @media (max-width: 768px) {
+      .hero-bg {
+        padding: 30px;
+      }
+      .section-bg {
+        padding: 20px;
+      }
+    }
+    .scroll-indicator {
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-10px);
+      }
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+  </style>
+</head>
+<body class="bg-green-50 text-gray-900">
+  <!-- Header -->
+  <header class="bg-white shadow-xl sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="text-3xl font-extrabold text-purple-600">Portfolio</div>
+      <ul class="hidden md:flex space-x-8">
+        <li><a href="#hero" class="text-gray-700 hover:text-purple-500 transition duration-300">Home</a></li>
+        <li><a href="#about" class="text-gray-700 hover:text-purple-500 transition duration-300">About</a></li>
+        <li><a href="#skills" class="text-gray-700 hover:text-purple-500 transition duration-300">Skills</a></li>
+        <li><a href="#projects" class="text-gray-700 hover:text-purple-500 transition duration-300">Projects</a></li>
+        <li><a href="#education" class="text-gray-700 hover:text-purple-500 transition duration-300">Education</a></li>
+        <li><a href="#contact" class="text-gray-700 hover:text-purple-500 transition duration-300">Contact</a></li>
+      </ul>
+      <button class="md:hidden text-purple-600" onclick="toggleMenu()">Menu</button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white p-4 shadow-lg">
+      <ul class="space-y-3">
+        <li><a href="#hero" class="block text-gray-700 hover:text-purple-500">Home</a></li>
+        <li><a href="#about" class="block text-gray-700 hover:text-purple-500">About</a></li>
+        <li><a href="#skills" class="block text-gray-700 hover:text-purple-500">Skills</a></li>
+        <li><a href="#projects" class="block text-gray-700 hover:text-purple-500">Projects</a></li>
+        <li><a href="#education" class="block text-gray-700 hover:text-purple-500">Education</a></li>
+        <li><a href="#contact" class="block text-gray-700 hover:text-purple-500">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-bg text-white py-24 relative">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center">
+      <div class="lg:w-1/2 fade-in mb-10 lg:mb-0">
+        <h1 class="text-6xl font-bold mb-6">Hi, I'm Rani Singh </h1>
+        <p class="text-2xl mb-8">Aspiring Software Engineer | BCA Student</p>
+        <p class="text-xl mb-10">Crafts innovative software solutions with passion. Currently deepening expertise in computer applications through BCA, aiming to make an impact in the tech world.</p>
+        <a href="#contact" class="bg-white text-purple-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition duration-300">Get In Touch</a>
+      </div>
+      <div class="lg:w-1/2">
+        <img src="C:\Users\Rani Kumari\Desktop\room\image\rani.jpg" alt="A professional photo of a young female software engineering student in BCA, smiling confidently in a modern co-working space, wearing a stylish blouse and glasses, with laptop screen showing code in the background, soft purple lighting, and vibrant plants around" class="rounded-full shadow-2xl mx-auto w-96 h-96 object-cover" />
+      </div>
+    </div>
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 scroll-indicator">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 5V19M5 12L12 19L19 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-24 section-bg">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col lg:flex-row items-center">
+        <div class="lg:w-1/2 mb-10 lg:mb-0">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bb9f0a13-54f0-427e-a78c-6605239bb769.png" alt="An illustration of a young coder sitting at a desk with multiple computer screens displaying coding interfaces, surrounded by floating icons of gears, light bulbs, and code brackets representing innovation in software development" class="rounded-xl shadow-xl" />
+        </div>
+        <div class="lg:w-1/2 fade-in">
+          <h2 class="text-5xl font-bold mb-10 text-purple-600">About Me</h2>
+          <p class="text-xl leading-relaxed mb-8">
+            As a dedicated BCA student and fresher in the software engineering field, I'm driven by curiosity and a relentless urge to solve complex problems through code. 
+            My journey involves mastering programming fundamentals, implementing new technologies, and building scalable applications that make a difference.
+          </p>
+          <p class="text-lg">
+            When not coding, you'll find me exploring tech blogs, contributing to open-source projects, or brainstorming ideas for the next big app.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-16 text-purple-600">My Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="card bg-green-100 p-8 rounded-xl text-center shadow-lg">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4b7431d2-6d9a-4c03-a44c-119000854e65.png" alt="Icons representing programming languages like Java, Python, C++ symbolized by code brackets and variable signs in a circular arrangement" class="skill-icon mx-auto rounded-full" />
+          <h3 class="text-3xl font-semibold mb-6">Programming Languages</h3>
+          <ul class="text-left space-y-3">
+            <li class="text-lg">Java - Object-oriented mastery</li>
+            <li class="text-lg">Python - Versatile scripting and AI</li>
+            <li class="text-lg">C++ - Low-level efficiency</li>
+            <li class="text-lg">JavaScript - Frontend & backend power</li>
+          </ul>
+        </div>
+        <div class="card bg-purple-100 p-8 rounded-xl text-center shadow-lg">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2366db5d-d990-4b1f-972a-30744d6112f3.png" alt="Web technology icons including HTML tags, CSS stylesheets, and React components arranged in a browser window layout" class="skill-icon mx-auto rounded-full" />
+          <h3 class="text-3xl font-semibold mb-6">Web Technologies</h3>
+          <ul class="text-left space-y-3">
+            <li class="text-lg">HTML5 - Semantic markup</li>
+            <li class="text-lg">CSS3 - Responsive styling</li>
+            <li class="text-lg">Bootstrap - Rapid prototyping</li>
+            <li class="text-lg">React - Interactive UIs</li>
+          </ul>
+        </div>
+        <div class="card bg-yellow-100 p-8 rounded-xl text-center shadow-lg">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0b2e1a08-7a8e-45ba-bf2c-a6ccb0cbfce9.png" alt="Tool icons like Git branches, databases, and cloud symbols representing development environment" class="skill-icon mx-auto rounded-full" />
+          <h3 class="text-3xl font-semibold mb-6">Tools & Platforms</h3>
+          <ul class="text-left space-y-3">
+            <li class="text-lg">Git & GitHub - Version control</li>
+            <li class="text-lg">VS Code - Efficient coding</li>
+            <li class="text-lg">MySQL - Database management</li>
+            <li class="text-lg">Firebase - Backend services</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-24 section-bg">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-16 text-purple-600">My Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="card bg-white p-8 rounded-xl shadow-xl">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4172292b-5d9a-4cfa-8117-a0bf74c839c7.png" alt="Screenshot of a To-Do List app interface with a clean white background, purple accents, task input box, listed tasks with checkboxes and delete icons, and a responsive layout for mobile and desktop" class="rounded-lg mb-6 w-full h-48 object-cover" />
+          <h3 class="text-3xl font-semibold mb-4">To-Do List App</h3>
+          <p class="text-lg mb-6">Built a dynamic task manager with HTML, CSS, JS, and local storage for persistence across sessions, featuring add, edit, and remove functionalities.</p>
+          <a href="#" class="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition">View on GitHub</a>
+        </div>
+        <div class="card bg-white p-8 rounded-xl shadow-xl">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9da4a907-c1a0-4c79-b94c-4b7d40cacf6f.png" alt="Screenshot of a Weather Dashboard displaying sunny weather icon, temperature 25°C, humidity 60%, wind speed 5km/h, with a green gradient background and forecast cards for next days in a mobile-friendly interface" class="rounded-lg mb-6 w-full h-48 object-cover" />
+          <h3 class="text-3xl font-semibold mb-4">Weather Dashboard</h3>
+          <p class="text-lg mb-6">Integrated weather API for real-time data, including current conditions and 5-day forecast, with search by city and responsive design.</p>
+          <a href="#" class="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition">View on GitHub</a>
+        </div>
+        <div class="card bg-white p-8 rounded-xl shadow-xl">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/76f51236-1279-4f84-b697-1b26230e4d5e.png" alt="Homepage screenshot of a blog site with purple header navigation, featured post image, blog title in elegant font, sidebar with recent posts, and a minimalist layout promoting clean reading experience" class="rounded-lg mb-6 w-full h-48 object-cover" />
+          <h3 class="text-3xl font-semibold mb-4">Personal Blog Site</h3>
+          <p class="text-lg mb-6">Developed a full blog template with static pages, dynamic content loading via JS, focus on SEO-friendly structure and beautiful typography.</p>
+          <a href="#" class="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition">View on GitHub</a>
+        </div>
+        <div class="card bg-white p-8 rounded-xl shadow-xl">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6d5cd0f0-32fc-4a7f-bb3f-5f5991fa013a.png" alt="Screenshot of a Simple Calculator web app with numeric keypad, operation buttons, display screen showing calculation 12+8=20, green and white color scheme, running on browser in desktop view" class="rounded-lg mb-6 w-full h-48 object-cover" />
+          <h3 class="text-3xl font-semibold mb-4">Calculator App</h3>
+          <p class="text-lg mb-6">Created an interactive calculator with basic arithmetic operations using JavaScript event handling and responsive CSS for all devices.</p>
+          <a href="#" class="bg-green-600 text white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition">View on GitHub</a>
+        </div>
+        <div class="card bg-white p-8 rounded-xl shadow-xl">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/72e06512-7fd6-4749-b8a0-1e375b9ae5a3.png" alt=" Mockup of a portfolio website showing hero section with name, skill icons, project previews, and contact form, styled with purple and green gradients in a one-page layout" class="rounded-lg mb-6 w-full h-48 object-cover" />
+          <h3 class="text-3xl font-semibold mb-4">This Portfolio Site</h3>
+          <p class="text-lg mb-6">Designed and developed this responsive portfolio using modern CSS, Tailwind, and JS animations to showcase skills and projects effectively.</p>
+          <a href="#" class="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition">View on GitHub</a>
+        </div>
+        <div class="card bg-white p-8 rounded-xl shadow-xl">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b37869dc-2670-4bef-a84c-c983a5767ac8.png" alt="Screenshot of a Recipe Finder app with search bar for ingredients, displayed recipe card with title 'Chocolate Chip Cookies', ingredients list, instructions, and cooking time, in a green-themed interface" class="rounded-lg mb-6 w-full h-48 object-cover" />
+          <h3 class="text-3xl font-semibold mb-4">Recipe Finder</h3>
+          <p class="text-lg mb-6">API-integrated app to search recipes by ingredients, display details like instructions and nutrition, built with HTML/CSS/JS and responsive design.</p>
+          <a href="#" class="bg-green-600 text white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col lg:flex-row items-center">
+        <div class="lg:w-1/2 fade-in mb-10 lg:mb-0">
+          <h2 class="text-5xl font-bold mb-10 text-purple-600">Education</h2>
+          <div class="bg-green-100 p-8 rounded-xl shadow-xl">
+            <h3 class="text-3xl font-semibold mb-4">Bachelor of Computer Applications (BCA)</h3>
+            <p class="text-xl mb-4">patliputra collage of professional education, patna, india</p>
+            <p class="text-xl mb-6">Expected Graduation: 2026</p>
+            <p class="text-lg">
+              Key Courses: Programming Fundamentals, Data Structures & Algorithms, Web Development, Database Management, Software Engineering Fundamentals.
+            </p>
+          </div>
+        </div>
+        <div class="lg:w-1/2">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5450898a-2bf9-44b2-a2f6-8e4ac9066a94.png" alt="Educational illustration of a diploma on graduation cap, surrounded by icons of books, circuit boards, coding screens, and light bulbs representing knowledge in computer applications, with soft purple and green harmonious colors" class="rounded-xl shadow-xl" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 section-bg">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-bold mb-16 text-purple-600">Contact Me</h2>
+      <p class="text-xl mb-12">Eager to discuss internships, collaborations, or tech opportunities. Let's create something amazing together!</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="bg-white p-8 rounded-xl shadow-xl">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3f84769b-05be-4019-84db-4850b57aa84f.png" alt="Digital illustration of an email envelope icon surrounded by glowing particles, symbolizing email communication in a professional software context" class="mx-auto mb-6 rounded-full" />
+          <p class="text-2xl mb-4">Email</p>
+          <a href="mailto:your.email@example.com" class="text-purple-600 text-lg font-semibold hover:text-purple-800">raniragni1234@gmail.com</a>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-xl">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6b54c248-d01d-4aa0-8d91-d1388bf58f21.png" alt="LinkedIn logo icon with professional handshake symbol integrated, representing social networking for career advancement in software engineering" class="mx-auto mb-6 rounded-full" />
+          <p class="text-2xl mb-4">LinkedIn</p>
+          <a href="https://linkedin.com/in/yourprofile" class="text-purple-600 text-lg font-semibold hover:text-purple-800" target="_blank">www.linkedin.com/in/rani-kumari-213b3b383</a>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-xl">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/84dea71d-a5e9-403c-b593-791b352b4cb2.png" alt="GitHub cat logo with coding symbols around it, illustrating version control and open-source contribution in a tech environment" class="mx-auto mb-6 rounded-full" />
+          <p class="text-2xl mb-4">GitHub</p>
+          <a href="https://github.com/yourusername" class="text-purple-600 text-lg font-semibold hover:text-purple-800" target="_blank">github.com/student-apnawebsite</a>
+        </div>
+      </div>
+      <div class="mt-16">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f8b1c1e8-8feb-4e9d-917a-2cd371b4bafe.png" alt="Communications network illustration with interconnected nodes, email icons, phone symbols, and social media logos forming a web, with handshake at center for connecting in software engineering community" class="rounded-xl shadow-xl mx-auto max-w-full" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p class="text-xl">© 2025 Rani Singh. Built with passion for software development.</p>
+      <p class="text-lg mt-4">Aspiring Software Engineer | Fresher in BCA | Ready to innovate</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Intersection Observer for fade-in
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Dynamic card hover effect
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        card.style.transform = 'scale(1.05) rotate(1deg)';
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'scale(1) rotate(0deg)';
+      });
+    });
+  </script>
+</body>
+</html>
+</content>
+</create_file>
